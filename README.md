@@ -28,6 +28,10 @@ Compose it:
 (compose creds data)
 ```
 
+## Caveats
+
+* metrics must already exist
+
 ## License
 
 Copyright © 2012 Michael Gorsuch 
