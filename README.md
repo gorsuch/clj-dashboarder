@@ -10,6 +10,12 @@ Define a map containing dashboards you wish to create:
 (def dash {:my-dashboard [[:some.instrument :some.metric] [:some.other.instrument :some.other.metric]]})
 ```
 
+An instrument can have multiple metrics:
+
+```clj
+(def dash {:my-dashboard [[:complex.instrument :first.metric :second.metric :third.metric]]})
+```
+
 Set your creds:
 
 ```clj
