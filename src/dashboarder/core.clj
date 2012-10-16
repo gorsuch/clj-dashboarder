@@ -34,7 +34,7 @@
       instrument
       (create-instrument creds definition))))
 
-(defn dashboard-request-body [dashboard-name instrument-definitions]
+(defn dashboard-request-body [creds dashboard-name instrument-definitions]
   (let [instrument-map (resource-map (get-resource creds :instruments) :name)
         instruments (map (fn [x] (ensure-instrument creds instrument-map x)) instrument-definitions)
         instrument-ids (map :id instruments)]
